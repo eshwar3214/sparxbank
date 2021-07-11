@@ -1,10 +1,9 @@
 <?php
 
-$username='root';
-$password='';
-$server='localhost';
-$dbname='customers';
-
+    $username='dWqRsnAtPe';
+    $password='tOahk66aZU';
+    $server='remotemysql.com';
+    $dbname='dWqRsnAtPe';
 
 $con=new mysqli($server,$username,$password,$dbname);
 
