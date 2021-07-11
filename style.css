@@ -1,0 +1,16 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    margin: auto;
+    padding: 23px;
+    background-color: rgb(9, 141, 9);
+    text-align: center;
+    /* background-image:url('background.jpg'); */
+}
+
+body{
+    background-color: cornsilk;
+    
+}
