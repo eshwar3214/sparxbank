@@ -1,13 +1,18 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>customer details</title>
-</head>
-<body align='center' bgcolor="cornsilk">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>customerdetails</title>
+  </head>
+  
+  <body>
     
     <h1>customer details</h1>
     <?php
@@ -34,23 +39,26 @@
     $result = $con->query($sql);
     echo "<br>";
     if ($result->num_rows>0) {
-        echo "<center>";
-        echo "<table border='5px' padding='23px'>";
-        echo "<tr>
-        <td>
-        sno
-        </td>
+        
+        echo "<table class='table'>
+        <thead class='thead-dark'>
+        <tr>
+        <td>sno</td>
         <td>name</td>
         <td>email</td>
         <td>balance</td>
-        </tr>";
+        </thead>
+        <tbody>";
+
+
+        
             while($row = $result->fetch_assoc()) {
                 echo "<tr><td>".$row['sno']."</td><td>".$row['name']."</td><td>".$row['email']."</td><td>".$row['balance']."</td></tr>";
 
                 
             }
-        echo "</table>";
-        echo "</center>";
+        echo "</tbody></table>";
+        
         
 } 
 
@@ -75,7 +83,10 @@
     <input type="submit" value="view previous transfers">
 </form>
 
-
     
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </body>
 </html>
