@@ -28,7 +28,7 @@
                 
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">Features</a>
+                <a class="nav-link" href="details.php">view customers</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="app-release-1.apk" download="explore">Download</a>
