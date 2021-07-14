@@ -1,13 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transfers</title>
-</head>
-<body>
-    <?php
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>transfers list</title>
+  </head>
+  <body>
+  <?php
     $username='sql5425083';
     $password='x8ZZtmrind';
     $server='sql5.freesqldatabase.com';
@@ -29,8 +33,9 @@
     $sql = "SELECT `sno`,`transferredfrom`,`transferredto`,`transferredamount`,`senderbalance`,`recieverbalance`,`date`FROM `transfers`";
     $result = $con->query($sql);
     echo "<br>";
-    echo "<center>
-    <table border='5px' padding='23px'>
+    echo "
+    <table class='table'>
+        <thead class='thead-dark'>
         <tr>
             <td>sno</td>
             <td>sender</td>
@@ -39,14 +44,14 @@
             <td>sender balance</td>
             <td>reciever balance</td>
             <td>transfer date</td>
-        </tr>";
+        </tr></thead><tbody>"
+        ;
         while($row = $result->fetch_assoc()) {
             echo "<tr><td>".$row['sno']."</td><td>".$row['transferredfrom']."</td><td>".$row['transferredto']."</td><td>".$row['transferredamount']."</td><td>".$row['senderbalance']."</td><td>".$row['recieverbalance']."</td><td>".$row['date']."</td></tr>";
 
             
         }
-    echo "</table>
-    </center>";
+    echo "</tbody></table>";
 
     $con->close();
     ?>
@@ -58,5 +63,12 @@
         <input type="submit" value="getpassbook">
     </form>
     </center>
-</body>
+
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   </body>
 </html>
+
+
