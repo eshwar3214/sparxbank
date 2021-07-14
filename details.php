@@ -70,17 +70,19 @@
 ?>
 <br><br><br>
     
+    <center>
     <form action="transfer.php" method="post">
     <input type="text" name="transferredfrom" placeholder="transferfrom" required><br>
     <input type="text" name="transferredto" placeholder="transferto" required><br>
     <input type="number" name="amount" placeholder="amount" required><br>
     <input type="submit" value="transfer">
 
-</form>
+    </form>
 
 <form action="transferslist.php">
     <input type="submit" value="view previous transfers">
 </form>
+    </center>
 
     
 
