@@ -8,10 +8,10 @@
 </head>
 <body>
     <?php
-    $username='dWqRsnAtPe';
-    $password='tOahk66aZU';
-    $server='remotemysql.com';
-    $dbname='dWqRsnAtPe';
+    $username='sql5425070';
+    $password='cIf2it7rIQ';
+    $server='sql5.freesqldatabase.com';
+    $dbname='sql5425070';
 
 
     $con=new mysqli($server,$username,$password,$dbname);
