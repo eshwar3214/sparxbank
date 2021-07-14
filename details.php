@@ -39,7 +39,7 @@
     echo "<br>";
     if ($result->num_rows>0) {
         
-        echo "<table class='table'>
+        echo "<div class='table-responsive'><table class='table table-bordered table-condensed'>
         <thead class='thead-dark'>
         <tr>
         <td>sno</td>
@@ -56,7 +56,7 @@
 
                 
             }
-        echo "</tbody></table>";
+        echo "</tbody></table></div>";
         
         
 } 
