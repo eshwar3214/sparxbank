@@ -49,7 +49,7 @@
         <form action="details.php" method="post">
             <input type="submit" value="get customer details">
         </form>
-        <br><br><br>
+        <br>
         <form action="transferslist.php" method="post">
             <input type="submit" value="view previous transfers">
         </form>
