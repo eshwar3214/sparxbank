@@ -59,7 +59,7 @@
     $result = $con->query($sql);
     echo "<br>";
     echo "
-    <table class='table'>
+       <div class='table-responsive'><table class='table table-bordered table-condensed'>
         <thead class='thead-dark'>
         <tr>
             <td>sno</td>
@@ -76,7 +76,7 @@
 
             
         }
-    echo "</tbody></table>";
+    echo "</tbody></table></div>";
 
     $con->close();
     ?>
