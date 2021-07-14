@@ -8,10 +8,10 @@
 </head>
 <body>
     <?php
-    $username='sql5425070';
-    $password='cIf2it7rIQ';
+    $username='sql5425083';
+    $password='x8ZZtmrind';
     $server='sql5.freesqldatabase.com';
-    $dbname='sql5425070';
+    $dbname='sql5425083';
 
 
     $con=new mysqli($server,$username,$password,$dbname);
