@@ -13,7 +13,8 @@
   
   <body>
     
-    <h1>customer details</h1>
+    
+    <h1 align='center'>customer details</h1>
     <?php
  
     $username='sql5425083';
