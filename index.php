@@ -31,7 +31,7 @@
                 <a class="nav-link" href="details.php">view customers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="app-release-1.apk" download="explore">Download</a>
+                <a class="nav-link" href="transferslist.php">previous transfers</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
