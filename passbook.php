@@ -1,4 +1,44 @@
-<?php
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>customerdetails</title>
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    
+        <a class="navbar-brand" href="index.php">sparx bank</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="details.php">view customers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="transferslist.php">previous transfers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <?php
 
     $username='sql5425083';
     $password='x8ZZtmrind';
@@ -44,7 +84,7 @@ $resultb=$con->query($sqb);
 echo "<center>
  <br>$user $email $balance
  <h3>transactions</h3>
-    <table border='5px' padding='23px'>
+    <table class='table table-bordered table-condensed'>
         <tr>
             <td>sno</td>
             <td>sender</td>
@@ -73,3 +113,7 @@ $con->close();
 
 
 ?>
+
+
+    </body>
+    </html>
