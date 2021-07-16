@@ -61,7 +61,7 @@
     }
 
 
-    echo $recieverdummy . $senderdummy;
+    
 
     $intrecieverdummy=(int)$recieverdummy;
     $intrecieverdummy=$intrecieverdummy+$amount;
