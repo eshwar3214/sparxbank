@@ -91,7 +91,7 @@ $resultb=$con->query($sqb);
 echo "<center>
  <br>$user $email $balance
  <h3>transactions</h3>
-    <table class='table table-bordered table-condensed'>
+    <div class='table-responsive'></div><table class='table table-bordered table-condensed'>
         <tr>
             <td>sno</td>
             <td>sender</td>
@@ -107,7 +107,7 @@ echo "<center>
 
             
         }
-    echo "</table>
+    echo "</table></div>
     </center>";
     
 
