@@ -45,6 +45,8 @@
           
       </nav>
 
+    <?php
+
     $username='sql5425083';
     $password='x8ZZtmrind';
     $server='sql5.freesqldatabase.com';
