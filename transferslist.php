@@ -12,10 +12,10 @@
   </head>
   <body>
   <?php
-    $username='dWqRsnAtPe';
-    $password='tOahk66aZU';
-    $server='remotemysql.com';
-    $dbname='dWqRsnAtPe';
+    $username='sql5425083';
+    $password='x8ZZtmrind';
+    $server='sql5.freesqldatabase.com';
+    $dbname='sql5425083';
 
 
     $con=new mysqli($server,$username,$password,$dbname);
