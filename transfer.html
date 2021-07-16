@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>customerdetails</title>
+    <title>transfer</title>
   </head>
   
   <body>
@@ -46,10 +46,12 @@
     </nav>
     <br><br><br>
     <center>
-        <form action="passbook.php" method="post">
-            <h3>get passbook of an account holder</h3>
-            <input type="text" name="name" placeholder><br><br>
-            <input type="submit" value="getpassbook">
+        <form action="transfer.php" method="post">
+        <input type="text" name="transferredfrom" placeholder="transferfrom" required><br>
+        <input type="text" name="transferredto" placeholder="transferto" required><br>
+        <input type="number" name="amount" placeholder="amount" required><br>
+        <input type="submit" value="transfer">
+    
         </form>
         </center>
     </body>
