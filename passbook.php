@@ -89,7 +89,7 @@ $sqb="SELECT * FROM transfers";
 $resultb=$con->query($sqb);
 
 echo "<center>
- <br><table><tr><td>name</td><td>".$user."</td></tr><tr><td>email</td><td>".$email."</td></tr><tr><td>balance</td><td>".$balance."</td></tr></table>
+ <br><table><tr><td>name :</td><td>".$user."</td></tr><tr><td>email :</td><td>".$email."</td></tr><tr><td>balance:</td><td>".$balance."</td></tr></table>
  <h3>transactions</h3>
     <div class='table-responsive'><table class='table table-bordered table-condensed'>
         <tr>
