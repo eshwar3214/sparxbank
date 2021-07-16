@@ -24,6 +24,9 @@
                 <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="passbook.html">passbook</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="details.php">view customers</a>
             </li>
             <li class="nav-item">
