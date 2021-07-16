@@ -19,8 +19,8 @@
     }
 
     $amount=$_POST['amount'];
-    $sender=$_POST['transferredfrom'];
-    $reciever=$_POST['transferredto'];
+    $sender=strtolower($_POST['transferredfrom']);
+    $reciever=strtolower($_POST['transferredto']);
 
     $flag1=0;
     $flag2=0;

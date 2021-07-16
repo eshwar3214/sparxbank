@@ -64,7 +64,7 @@ else
     echo "server connection established";
 }
 
-$user=$_POST['name'];
+$user=strtolower($_POST['name']);
 
 $sqa="SELECT * FROM details";
 
