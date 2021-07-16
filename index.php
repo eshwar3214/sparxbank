@@ -26,6 +26,9 @@
                 <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="transfer.html">transfer</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="passbook.html">passbook</a>
             </li>
 
