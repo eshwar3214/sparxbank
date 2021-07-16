@@ -11,7 +11,7 @@
     <title>customerdetails</title>
   </head>
   
-  <body bgcolor='cornsilk'>
+  <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     
@@ -23,8 +23,9 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                
+                <a class="nav-link" href="index.php">Home</a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="details.php">view customers</a>
             </li>
