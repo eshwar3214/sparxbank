@@ -12,7 +12,7 @@
     <title>customerdetails</title>
   </head>
   
-  <body>
+  <body bgcolor='cornsilk'>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     
