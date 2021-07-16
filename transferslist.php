@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,58 +8,32 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>passbook</title>
+    <title>transfers list</title>
   </head>
   <body>
-
-
   <?php
-
-$username='dWqRsnAtPe';
-$password='tOahk66aZU';
-$server='remotemysql.com';
-$dbname='dWqRsnAtPe';
-
-$con=new mysqli($server,$username,$password,$dbname);
-
-if($con->connect_error)
-{
-die("connection abborted due to ".mysqli_connect_error());
-
-}
-else
-{
-echo "server connection established";
-}
-
-$user=$_POST['name'];
-
-$sqa="SELECT * FROM details";
-
-$resulta=$con->query($sqa);
-
-while($rowa= $resulta->fetch_assoc()) {
-if($rowa['name']==$user)
-{
-    $balance=$rowa['balance'];
-    $email=$rowa['email'];
-    break;
-    
-}
+    $username='dWqRsnAtPe';
+    $password='tOahk66aZU';
+    $server='remotemysql.com';
+    $dbname='dWqRsnAtPe';
 
 
+    $con=new mysqli($server,$username,$password,$dbname);
 
-}
+    if($con->connect_error)
+    {
+        die("connection abborted due to ".mysqli_connect_error());
 
+    }
+    else
+    {
+        echo "server connection established";
+    }
 
-$sqb="SELECT * FROM transfers";
-
-$resultb=$con->query($sqb);
-
-echo "<center>
-<br>$user $email $balance
-<h3>transactions</h3>";
-echo "
+    $sql = "SELECT `sno`,`transferredfrom`,`transferredto`,`transferredamount`,`senderbalance`,`recieverbalance`,`date`FROM `transfers`";
+    $result = $con->query($sql);
+    echo "<br>";
+    echo "
     <table class='table'>
         <thead class='thead-dark'>
         <tr>
@@ -74,25 +46,23 @@ echo "
             <td>transfer date</td>
         </tr></thead><tbody>"
         ;
-    while($rowb = $resultb->fetch_assoc()) {
-        if($rowb['transferredfrom']==$user || $rowb['transferredto']==$user)
-        echo "<tr><td>".$rowb['sno']."</td><td>".$rowb['transferredfrom']."</td><td>".$rowb['transferredto']."</td><td>".$rowb['transferredamount']."</td><td>".$rowb['senderbalance']."</td><td>".$rowb['recieverbalance']."</td><td>".$rowb['date']."</td></tr>";
+        while($row = $result->fetch_assoc()) {
+            echo "<tr><td>".$row['sno']."</td><td>".$row['transferredfrom']."</td><td>".$row['transferredto']."</td><td>".$row['transferredamount']."</td><td>".$row['senderbalance']."</td><td>".$row['recieverbalance']."</td><td>".$row['date']."</td></tr>";
 
-        
-    }
+            
+        }
     echo "</tbody></table>";
 
+    $con->close();
+    ?>
 
-
-
-
-
-
-$con->close();
-
-
-?>
-  
+    <center>
+    <form action="passbook.php" method="post">
+        <h3>get passbook of an account holder</h3>
+        <input type="text" name="name" placeholder><br><br>
+        <input type="submit" value="getpassbook">
+    </form>
+    </center>
 
     
 
