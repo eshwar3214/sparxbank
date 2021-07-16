@@ -57,8 +57,9 @@
     $sql = "SELECT `sno`,`transferredfrom`,`transferredto`,`transferredamount`,`senderbalance`,`recieverbalance`,`date`FROM `transfers`";
     $result = $con->query($sql);
     echo "<br>";
+    echo "<h3 align='center'>transactions</h3>";
     echo "
-    <table class='table'>
+    <div class='table-responsive'><table class='table table-bordered table-condensed'>
         <thead class='thead-dark'>
         <tr>
             <td>sno</td>
@@ -75,7 +76,7 @@
 
             
         }
-    echo "</tbody></table>";
+    echo "</tbody></table></div>";
 
     $con->close();
     ?>
