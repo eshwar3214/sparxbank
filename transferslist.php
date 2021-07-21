@@ -42,10 +42,10 @@
           
       </nav>
   <?php
-    $username='sql5425083';
-    $password='x8ZZtmrind';
+    $username='sql5426857';
+    $password='3h9gyxdy51';
     $server='sql5.freesqldatabase.com';
-    $dbname='sql5425083';
+    $dbname='sql5426857';
 
 
     $con=new mysqli($server,$username,$password,$dbname);
