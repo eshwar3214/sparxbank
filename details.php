@@ -46,6 +46,7 @@
     
     <h3 align='center'>customer details</h1>
     <?php
+    // hello thish is comment
  
  $username='sql5426857';
  $password='3h9gyxdy51';
