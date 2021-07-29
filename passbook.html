@@ -45,11 +45,27 @@
       </nav>
     <br><br><br>
     <center>
-        <form action="passbook.php" method="post">
-            <h3>get passbook of an account holder</h3>
-            <input type="text" name="name" placeholder><br><br>
-            <input type="submit" value="getpassbook">
-        </form>
+      <form action="passbook.php" method="post">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="transferredto">send to</label>
+          </div>
+          <select class="custom-select" name="name">
+            <option selected>Choose...</option>
+            <option value="eshwar">eshwar</option>
+            <option value="karthik">kartihk</option>
+            <option value="siraj">siraj</option>
+            <option value="praful">praful</option>
+            <option value="satish">satish</option>
+            <option value="lohith">lohith</option>
+            <option value="vignesh">vignesh</option>
+            <option value="ruthvik">ruthvik</option>
+            <option value="dhanush">dhanush</option>
+            <option value="vamshi">vamshi</option>
+    
+          </select>
+        </div> 
+      </form>  
         </center>
     </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
