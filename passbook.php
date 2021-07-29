@@ -47,11 +47,10 @@
 
     <?php
 
-    $username='sql5426857';
-    $password='3h9gyxdy51';
-    $server='sql5.freesqldatabase.com';
-    $dbname='sql5426857';
-
+$username='mxzdNuhTG0';
+$password='EcrWfxdjCS';
+$server='remotemysql.com';
+$dbname='mxzdNuhTG0';
 $con=new mysqli($server,$username,$password,$dbname);
 
 if($con->connect_error)
