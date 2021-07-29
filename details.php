@@ -103,12 +103,52 @@
     
     <center>
     <form action="transfer.php" method="post">
-    <input type="text" name="transferredfrom" placeholder="transferfrom" required><br>
-    <input type="text" name="transferredto" placeholder="transferto" required><br>
-    <input type="number" name="amount" placeholder="amount" required><br>
-    <input type="submit" value="transfer">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="transferredfrom">send from</label>
+            </div>
+            <select class="custom-select" name="transferredfrom">
+              <option selected>Choose...</option>
+              <option value="eshwar">eshwar</option>
+              <option value="karthik">kartihk</option>
+              <option value="siraj">siraj</option>
+              <option value="praful">praful</option>
+              <option value="satish">satish</option>
+              <option value="lohith">lohith</option>
+              <option value="vignesh">vignesh</option>
+              <option value="ruthvik">ruthvik</option>
+              <option value="dhanush">dhanush</option>
+              <option value="vamshi">vamshi</option>
+      
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="transferredto">send to</label>
+            </div>
+            <select class="custom-select" name="transferredto">
+              <option selected>Choose...</option>
+              <option value="eshwar">eshwar</option>
+              <option value="karthik">kartihk</option>
+              <option value="siraj">siraj</option>
+              <option value="praful">praful</option>
+              <option value="satish">satish</option>
+              <option value="lohith">lohith</option>
+              <option value="vignesh">vignesh</option>
+              <option value="ruthvik">ruthvik</option>
+              <option value="dhanush">dhanush</option>
+              <option value="vamshi">vamshi</option>
+      
+            </select>
+          </div>   
+          <input type="number" name="amount" placeholder="amount" required><br> 
 
-    </form>
+      
+       
+        <input type="submit" value="transfer">
+
+    
+        </form>
 
 <form action="transferslist.php">
     <input type="submit" value="view previous transfers">
