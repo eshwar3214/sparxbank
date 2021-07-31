@@ -64,7 +64,7 @@
     $result = $con->query($sql);
     echo "<br>";
     echo "<h3 align='center'>transactions</h3>";
-    echo "
+    echo "<div class='container'>
     <div class='table-responsive'><table class='table table-bordered table-condensed'>
         <thead class='thead-dark'>
         <tr>
@@ -82,7 +82,7 @@
 
             
         }
-    echo "</tbody></table></div>";
+    echo "</tbody></table></div></div>";
 
     $con->close();
     ?>
